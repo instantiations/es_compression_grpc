@@ -1,7 +1,7 @@
 # Description
 The hello world server and client is a modified version of the example provided by the
 [grpc-dart](https://pub.dev/packages/grpc) package. The example demonstrates how to use Dart gRPC libraries to perform
-unary RPCs with various compression schemes such as brotli, gzip, lz4 and zstd (ZStandard).
+unary RPCs with various compression schemes such as brotli, gzip, lz4 and zstd (Zstandard).
 
 See the definition of the hello world service in `protos/helloworld.proto`.
 

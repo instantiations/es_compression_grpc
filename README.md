@@ -4,6 +4,7 @@
 # ES Compression gRPC: gRPC Compression Extensions for Dart
 
 ## Description
+Provides additional compression support to [grpc-dart](https://pub.dev/packages/grpc) to include Brotli, Lz4 and Zstd (Zstandard).
 
 ## Examples
 

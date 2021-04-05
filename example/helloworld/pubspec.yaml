@@ -1,5 +1,5 @@
 name: helloworld
-description: Dart gRPC sample client and server using brotli, lz4, zstd (ZStandard) compression.
+description: Dart gRPC sample client and server using brotli, lz4, zstd (Zstandard) compression.
 publish_to: none
 
 environment:
