@@ -1,0 +1,19 @@
+name: es_compression_grpc
+description: gRPC compression support for Brotli, Lz4, and Zstd (Zstandard) using the es_compression Dart library
+version: 0.9.0
+homepage: https://www.instantiations.com
+issue_tracker: https://github.com/instantiations/es_compression_grpc/issues
+repository: https://github.com/instantiations/es_compression_grpc
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  es_compression: ^2.0.0
+  grpc: ^3.0.0
+
+dev_dependencies:
+  benchmark_harness: ^2.0.0
+  collection: ^1.15.0
+  pedantic: ^1.10.0
+  test: ^1.16.0
