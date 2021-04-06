@@ -1,6 +1,6 @@
 [![Language](https://img.shields.io/badge/language-Dart-blue.svg)](https://dart.dev)
 [![pub package](https://img.shields.io/pub/v/es_compression_grpc.svg)](https://pub.dartlang.org/packages/es_compression_grpc)
-[![Build Status](https://www.travis-ci.com/instantiations/es_compression.svg?branch=master)](https://www.travis-ci.com/instantiations/es_compression)
+[![Build Status](https://www.travis-ci.com/instantiations/es_compression_grpc.svg?branch=master)](https://www.travis-ci.com/instantiations/es_compression_grpc)
 
 # ES Compression gRPC: gRPC Compression Extensions for Dart
 
