@@ -7,6 +7,7 @@ import 'package:grpc/grpc.dart' as grpc;
 
 /// A zstd compressor and decompressor.
 class ZstdCodec implements grpc.Codec {
+  /// Zstd gRPC codec constructor
   const ZstdCodec();
 
   @override

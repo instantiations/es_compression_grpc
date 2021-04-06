@@ -7,6 +7,7 @@ import 'package:grpc/grpc.dart' as grpc;
 
 /// A brotli compressor and decompressor.
 class BrotliCodec implements grpc.Codec {
+  /// Brotli gRPC codec constructor
   const BrotliCodec();
 
   @override

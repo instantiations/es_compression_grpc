@@ -7,6 +7,7 @@ import 'package:grpc/grpc.dart' as grpc;
 
 /// An lz4 compressor and decompressor.
 class Lz4Codec implements grpc.Codec {
+  /// Lz4 gRPC codec constructor
   const Lz4Codec();
 
   @override
