@@ -20,10 +20,10 @@ framework.
 ## Tests
 In the `test` subdirectory, the following tests are provided.
 
-| Test                    | Description                                             |
-| ------------------------| ------------------------------------------------------- |
-| `codec_tests.dart`      | Test encoding/decode of the various compression codecs  |
-| `helloworld_tests.dart` | Test the helloworld client/server example               |
+| Test                            | Description                                             |
+| --------------------------------| ------------------------------------------------------- |
+| `es_compression_grpc_test.dart` | Test encoding/decode of the various compression codecs  |
+| `helloworld_test.dart`          | Test the helloworld client/server example               |
 
 To run test suite:
 ```console

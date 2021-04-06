@@ -2,8 +2,7 @@
 // file for details. All rights reserved. Use of this source code is governed by
 // a BSD-style license that can be found in the LICENSE file.
 
-import 'package:es_compression_grpc/codec.dart';
-
+import 'package:es_compression_grpc/es_compression_grpc.dart';
 import 'package:grpc/grpc.dart';
 import 'package:helloworld/src/generated/helloworld.pb.dart';
 import 'package:helloworld/src/generated/helloworld.pbgrpc.dart';

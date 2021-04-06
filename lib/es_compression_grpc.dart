@@ -6,7 +6,7 @@
 ///
 /// To use this library in your code:
 /// ```
-/// import 'package:es_compression_grpc/codec.dart';
+/// import 'package:es_compression_grpc/es_compression_grpc.dart';
 /// ```
 library codec;
 

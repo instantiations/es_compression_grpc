@@ -4,7 +4,7 @@
 
 import 'dart:convert';
 
-import 'package:es_compression_grpc/codec.dart';
+import 'package:es_compression_grpc/es_compression_grpc.dart';
 import 'package:test/test.dart';
 
 void main() {
