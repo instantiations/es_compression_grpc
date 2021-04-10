@@ -7,15 +7,19 @@ import 'package:grpc/grpc.dart' as grpc;
 
 /// A zstd compressor and decompressor.
 class ZstdCodec implements grpc.Codec {
+  /// Zstd compression level to use.
+  /// see [ZstdEncoder.level] for a value range.
+  final int compressionLevel;
+
   /// Zstd gRPC codec constructor
-  const ZstdCodec();
+  const ZstdCodec({this.compressionLevel = ZstdOption.defaultLevel});
 
   @override
   final encodingName = 'zstd';
 
   @override
   List<int> compress(List<int> data) {
-    return ZstdEncoder().convert(data);
+    return ZstdEncoder(level: compressionLevel).convert(data);
   }
 
   @override

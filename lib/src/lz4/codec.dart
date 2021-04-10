@@ -7,15 +7,19 @@ import 'package:grpc/grpc.dart' as grpc;
 
 /// An lz4 compressor and decompressor.
 class Lz4Codec implements grpc.Codec {
+  /// Lz4 compression level to use.
+  /// see [Lz4Encoder.level] for a value range.
+  final int compressionLevel;
+
   /// Lz4 gRPC codec constructor
-  const Lz4Codec();
+  const Lz4Codec({this.compressionLevel = Lz4Option.defaultLevel});
 
   @override
   final encodingName = 'lz4';
 
   @override
   List<int> compress(List<int> data) {
-    return Lz4Encoder().convert(data);
+    return Lz4Encoder(level: compressionLevel).convert(data);
   }
 
   @override

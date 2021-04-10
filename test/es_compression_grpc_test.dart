@@ -24,7 +24,14 @@ void main() {
   });
 
   test('Test Codec Compress/Decompress', () {
-    const codecs = [BrotliCodec(), Lz4Codec(), ZstdCodec()];
+    const codecs = [
+      BrotliCodec(),
+      BrotliCodec(compressionLevel: 0),
+      Lz4Codec(),
+      Lz4Codec(compressionLevel: 16),
+      ZstdCodec(),
+      ZstdCodec(compressionLevel: 22)
+    ];
     for (final codec in codecs) {
       final testData = utf8.encode('Hello Dart!');
       expect(codec.decompress(codec.compress(testData)), testData);
