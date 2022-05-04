@@ -18,12 +18,9 @@ class Lz4Codec implements grpc.Codec {
   final encodingName = 'lz4';
 
   @override
-  List<int> compress(List<int> data) {
-    return Lz4Encoder(level: compressionLevel).convert(data);
-  }
+  List<int> compress(List<int> data) =>
+      Lz4Encoder(level: compressionLevel).convert(data);
 
   @override
-  List<int> decompress(List<int> data) {
-    return Lz4Decoder().convert(data);
-  }
+  List<int> decompress(List<int> data) => Lz4Decoder().convert(data);
 }

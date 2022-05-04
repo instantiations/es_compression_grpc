@@ -4,7 +4,6 @@
 
 import 'package:es_compression_grpc/es_compression_grpc.dart';
 import 'package:grpc/grpc.dart';
-import 'package:helloworld/src/generated/helloworld.pb.dart';
 import 'package:helloworld/src/generated/helloworld.pbgrpc.dart';
 
 /// Return a new [List] of gRPC compression [Codec]s
@@ -21,7 +20,7 @@ Future<void> main(List<String> args) async {
     'localhost',
     port: 50051,
     options: ChannelOptions(
-      credentials: ChannelCredentials.insecure(),
+      credentials: const ChannelCredentials.insecure(),
       codecRegistry: CodecRegistry(codecs: codecs),
     ),
   );

@@ -18,12 +18,9 @@ class ZstdCodec implements grpc.Codec {
   final encodingName = 'zstd';
 
   @override
-  List<int> compress(List<int> data) {
-    return ZstdEncoder(level: compressionLevel).convert(data);
-  }
+  List<int> compress(List<int> data) =>
+      ZstdEncoder(level: compressionLevel).convert(data);
 
   @override
-  List<int> decompress(List<int> data) {
-    return ZstdDecoder().convert(data);
-  }
+  List<int> decompress(List<int> data) => ZstdDecoder().convert(data);
 }

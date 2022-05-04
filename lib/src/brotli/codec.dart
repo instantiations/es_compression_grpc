@@ -18,12 +18,9 @@ class BrotliCodec implements grpc.Codec {
   final encodingName = 'brotli';
 
   @override
-  List<int> compress(List<int> data) {
-    return BrotliEncoder(level: compressionLevel).convert(data);
-  }
+  List<int> compress(List<int> data) =>
+      BrotliEncoder(level: compressionLevel).convert(data);
 
   @override
-  List<int> decompress(List<int> data) {
-    return BrotliDecoder().convert(data);
-  }
+  List<int> decompress(List<int> data) => BrotliDecoder().convert(data);
 }

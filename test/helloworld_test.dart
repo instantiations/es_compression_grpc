@@ -4,7 +4,6 @@
 
 import 'dart:io';
 
-import 'package:file_utils/file_utils.dart';
 import 'package:path/path.dart' as path;
 import 'package:test/test.dart';
 import 'package:test_process/test_process.dart';
@@ -23,10 +22,10 @@ void main() {
     expect(File(clientPath).existsSync(), true);
 
     // Run pub get on helloworld example
-    expect(FileUtils.chdir(helloWorldPath), true);
+    Directory.current = Directory(helloWorldPath);
     final pubGet = await TestProcess.start('dart', ['pub', 'get']);
     await pubGet.shouldExit(0);
-    expect(FileUtils.chdir(origPath), true);
+    Directory.current = Directory(origPath);
 
     try {
       server = await TestProcess.start('dart', [serverPath]);
